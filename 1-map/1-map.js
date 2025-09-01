@@ -29,4 +29,12 @@ function deleteDuplicate(arr) {
     }).filter(item => item !== null);
 }
 
+function deleteDuplicateById(arr) {
+    const seenIds = new Set();
+    return arr.filter(item => {
+        return seenIds.has(item.id) ? false : seenIds.add(item.id);
+    });
+}
+
 console.log(deleteDuplicate(data));
+console.log(deleteDuplicateById(data));
