@@ -1,6 +1,6 @@
 function DNDCube(dice) {
     const num = dice.slice(1, dice.length);
-    const randomCube = Math.floor(Math.random() * (num - 1 + 1) + 1);
+    const randomCube = Math.floor(Math.random() * (num) + 1);
     return randomCube
 }
 
