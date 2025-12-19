@@ -16,9 +16,9 @@ class FixedBilling extends Billing {
 }
 
 class HourBilling extends Billing {
-    constructor() {
+    constructor(amount, time) {
         super(amount);
-        this.time = this.time;
+        this.time = time;
     }
 
     CalculateTotal() {
@@ -28,9 +28,9 @@ class HourBilling extends Billing {
 }
 
 class ItemBilling extends Billing {
-    constructor() {
+    constructor(amount, element) {
         super(amount);
-        this.element = this.element;
+        this.element = element;
     }
 
     CalculateTotal() {
