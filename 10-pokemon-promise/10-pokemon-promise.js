@@ -16,7 +16,6 @@ sendRequest(url, 'Can not get pokemons')
 	.then((data) => {
 		return sendRequest(data.abilities[0].ability.url, 'cannot get english languages')
 			.then((data) => {
-				const data = JSON.parse((this.responseText));
 				data.effect_entries.forEach((item) => {
 					if (item.language.name === 'en') {
 						console.log(item)
