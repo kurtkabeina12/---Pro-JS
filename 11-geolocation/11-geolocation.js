@@ -2,10 +2,10 @@
 
 function getCurrentPosition(position) {
     return new Promise(async (resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject)
         try {
-            const response = await fetch(url);
             const data = await response.json();
-            resolve(data);
+            resolve(data)
         } catch (error) {
             reject(error)
         }
