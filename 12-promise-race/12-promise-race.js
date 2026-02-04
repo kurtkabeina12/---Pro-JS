@@ -1,10 +1,10 @@
 'use strict'
 
-async function race(arr) {
-    const res = await Promise.race([
-        arr
-    ])
-    console.log(res)
+async function race(promises) {
+    return await Promise.race(promises);
 }
 
-race()
+const p1 = new Promise(resolve => setTimeout(() => resolve('first'), 100));
+const p2 = new Promise(resolve => setTimeout(() => resolve('second'), 200));
+
+race([p1, p2]).then(result => console.log(result));
