@@ -13,5 +13,6 @@ getCurrentPosition()
         console.log('Точность:', position.coords.accuracy, 'метров');
     })
     .catch(error => {
+
         console.error('Ошибка получения геолокации:', error.message);
     })
