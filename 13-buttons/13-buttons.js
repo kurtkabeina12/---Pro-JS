@@ -15,8 +15,15 @@ for (let i = 0; i < 5; i++) {
 
 homeBLock.addEventListener('click', (e) => {
     counter += 1;
+    tap.textContent = `${counter}`
     const but_id = e.target.getAttribute('data-id');
     const but = document.querySelector(`.but${but_id}`)
+
+    const allButtons = document.querySelectorAll('button');
+    allButtons.forEach(button => {
+        button.textContent = 'Нажми меня';
+    });
+
     but.textContent = 'Кнопка нажата';
 });
 
