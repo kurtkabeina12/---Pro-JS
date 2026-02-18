@@ -8,4 +8,4 @@ class Task {
     }
 }
 
-module.export = { Task }
+module.exports = { Task }
