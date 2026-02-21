@@ -1,4 +1,4 @@
-class Task {
+export class Task {
     constructor(name) {
         this.name = name;
     }
@@ -7,5 +7,3 @@ class Task {
         console.log(`Выполняется задача: ${this.name}`)
     }
 }
-
-module.exports = { Task }
