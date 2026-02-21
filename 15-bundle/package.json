@@ -1,0 +1,26 @@
+{
+  "name": "15-bundle",
+  "version": "1.0.0",
+  "description": "test first bundle",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "start": "live-server --port=8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurtkabeina12/---Pro-JS.git#15-bundle"
+  },
+  "author": "YanaAvetisyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurtkabeina12/---Pro-JS/issues"
+  },
+  "homepage": "https://github.com/kurtkabeina12/---Pro-JS/tree/15-bundle#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "live-server": "^1.2.2",
+    "rollup": "^4.58.0"
+  }
+}
