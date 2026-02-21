@@ -4,7 +4,8 @@
   "description": "test first bundle",
   "main": "index.js",
   "scripts": {
-    "build": "rollup index.js --format iife --name \"myBundle\" --file bundle.js"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "start": "live-server --port=8080"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/kurtkabeina12/---Pro-JS/tree/15-bundle#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "live-server": "^1.2.2",
     "rollup": "^4.58.0"
   }
 }
